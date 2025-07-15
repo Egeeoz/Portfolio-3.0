@@ -17,7 +17,7 @@ const Projects = () => {
       id: 1,
       name: 'Blackjack Game',
       description:
-        'A digital implementation of the classic casino game Blackjack, allowing users to play against a computer dealer in a browser-based environment',
+        'A digital implementation of the classic casino game Blackjack, allowing users to play against a computer dealer in a browser based environment',
       link: 'https://egeeoz.github.io/Blackjack/',
       github: 'https://github.com/Egeeoz/Blackjack',
       technologies: ['HTML', 'CSS', 'React', 'Typescript'],
@@ -66,8 +66,8 @@ const Projects = () => {
       <div className="flex flex-col items-center text-center gap-2">
         <h2 className="text-3xl font-bold mb-4">My Projects</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto px-4">
-          Here are some of the projects I've worked on. Each project represents
-          a unique challenge and showcases different aspects of my development
+          Here are some of the projects I've created. Each project represents a
+          unique challenge and showcases different aspects of my development
           skills.
         </p>
       </div>
