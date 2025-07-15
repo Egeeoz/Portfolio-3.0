@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
+
+A responsive portfolio website built with Next.js, React, and Tailwind CSS.
+
+## Features
+
+- Responsive design for mobile and desktop
+- Dark theme
+- Animated text effects
+- Project showcase
+- Contact information
+- Skills display
+
+## Technologies Used
+
+- Next.js 15
+- React 19
+- Tailwind CSS
+- Radix UI Components
+- Lucide React Icons
+- Motion (Framer Motion)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/portfolio-3.git
+cd portfolio-3
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Deployment to GitHub Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Automatic Deployment (Recommended)
 
-## Learn More
+1. Push your code to GitHub:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Go to your repository on GitHub and navigate to **Settings** > **Pages**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Under "Source", select **GitHub Actions**
 
-## Deploy on Vercel
+4. The GitHub Actions workflow will automatically build and deploy your site when you push to the main branch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Manual Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. The static files will be generated in the `out` directory.
+
+3. Upload the contents of the `out` directory to your GitHub Pages repository.
+
+## Project Structure
+
+```
+portfolio-3/
+├── src/
+│   ├── app/
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── sections/
+│   │   │   ├── about.jsx
+│   │   │   ├── projects.jsx
+│   │   │   └── contact.jsx
+│   │   └── ui/
+│   └── img/
+├── components/
+│   └── motion-primitives/
+└── public/
+```
+
+## Customization
+
+### Adding Projects
+
+Edit `src/components/sections/projects.jsx` to add or modify projects:
+
+```javascript
+const projects = [
+  {
+    id: 1,
+    name: 'Project Name',
+    description: 'Project description',
+    link: 'https://project-url.com',
+    github: 'https://github.com/username/project',
+    technologies: ['React', 'TypeScript', 'Tailwind'],
+  },
+];
+```
+
+### Updating Contact Information
+
+Edit `src/components/sections/contact.jsx` to update your contact details:
+
+```javascript
+const contactDetails = {
+  email: 'your-email@example.com',
+  phone: 'Your Phone Number',
+  location: 'Your Location',
+  githubUrl: 'https://github.com/yourusername',
+  linkedinUrl: 'https://linkedin.com/in/yourprofile',
+};
+```
+
+### Modifying Skills
+
+Edit `src/components/sections/about.jsx` to update your skills list:
+
+```javascript
+const skills = [
+  'HTML & CSS',
+  'JavaScript',
+  'React',
+  // Add more skills...
+];
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
