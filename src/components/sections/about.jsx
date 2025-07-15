@@ -4,7 +4,9 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
+  CardContent,
 } from '@/components/ui/card';
+import { Separator } from '../ui/separator';
 import { TextScramble } from '../../../components/motion-primitives/text-scramble';
 import { Avatar } from '@/components/ui/avatar';
 import { useState, useEffect } from 'react';
@@ -97,22 +99,21 @@ const About = () => {
         <CardDescription className="mb-4">
           24 year old working as fullstack dev at We Know IT, likes to code
         </CardDescription>
-
-        {/* Skills Section */}
-        <div className="flex flex-wrap gap-2 justify-center max-w-3/4">
-          {skills.map((skill, index) => (
-            <Badge
-              key={skill}
-              variant={badgeVariants[index % badgeVariants.length]}
-              className={`${
-                badgeColors[index % badgeColors.length]
-              } transition-all duration-200 hover:scale-105 cursor-pointer`}
-            >
-              {skill}
-            </Badge>
-          ))}
-        </div>
+        <Separator />
       </CardHeader>
+      <CardContent className="flex flex-wrap gap-2 justify-center max-w-3/4 pt-1">
+        {skills.map((skill, index) => (
+          <Badge
+            key={skill}
+            variant={badgeVariants[index % badgeVariants.length]}
+            className={`${
+              badgeColors[index % badgeColors.length]
+            } transition-all duration-200 hover:scale-105 cursor-pointer`}
+          >
+            {skill}
+          </Badge>
+        ))}
+      </CardContent>
     </Card>
   );
 };
