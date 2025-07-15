@@ -22,7 +22,7 @@ const Contact = () => {
 
   return (
     <div className="flex justify-center items-center w-full px-0">
-      <Card className="w-full max-w-2xl">
+      <Card className="w-[35%]">
         <CardHeader className="text-center px-0">
           <CardTitle className="text-2xl">Contact Me</CardTitle>
           <CardDescription>
