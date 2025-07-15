@@ -1,5 +1,9 @@
 import About from '@/components/sections/about';
 
 export default function Home() {
-  return <About />;
+  return (
+    <main className="flex justify-center pt-4">
+      <About />
+    </main>
+  );
 }
