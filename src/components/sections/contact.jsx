@@ -21,15 +21,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full px-0">
-      <Card className="w-[35%]">
-        <CardHeader className="text-center px-0">
+    <div className="flex justify-center items-center w-full px-4 sm:px-0">
+      <Card className="w-full sm:w-[35%]">
+        <CardHeader className="text-center px-4 sm:px-6">
           <CardTitle className="text-2xl">Contact Me</CardTitle>
           <CardDescription>
             Get in touch or find me on other platforms.
           </CardDescription>
         </CardHeader>
-        <CardContent className="px-0">
+        <CardContent className="px-4 sm:px-6">
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 text-sm">
             {/* Email */}
             <div className="flex items-center gap-2">
@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
           </div>
         </CardContent>
-        <CardFooter className="px-0">
+        <CardFooter className="px-4 sm:px-6">
           <div className="flex w-full justify-center gap-4">
             <Button
               variant="outline"

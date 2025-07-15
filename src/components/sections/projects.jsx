@@ -65,20 +65,20 @@ const Projects = () => {
     <div className="flex flex-col gap-4 container mx-auto px-4 py-8">
       <div className="flex flex-col items-center text-center gap-2">
         <h2 className="text-3xl font-bold mb-4">My Projects</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-muted-foreground max-w-2xl mx-auto px-4">
           Here are some of the projects I've worked on. Each project represents
           a unique challenge and showcases different aspects of my development
           skills.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 items-start">
+      <div className="flex flex-wrap justify-center gap-4 items-start px-4 sm:px-0">
         {projects.map((project) => (
           <Card
             key={project.id}
             className="flex flex-col group w-full max-w-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 gap-4"
           >
-            <CardHeader>
+            <CardHeader className="px-4 sm:px-6">
               <CardTitle className="text-xl group-hover:text-primary transition-colors">
                 {project.name}
               </CardTitle>
@@ -87,7 +87,7 @@ const Projects = () => {
               </CardDescription>
             </CardHeader>
 
-            <CardContent>
+            <CardContent className="px-4 sm:px-6">
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <Badge
@@ -103,7 +103,7 @@ const Projects = () => {
               </div>
             </CardContent>
 
-            <CardFooter>
+            <CardFooter className="px-4 sm:px-6">
               <div className="flex gap-2 w-full">
                 <Button
                   variant="default"

@@ -76,8 +76,8 @@ const About = () => {
   }, []);
 
   return (
-    <Card className="flex justify-center items-center w-2/4 mx-auto gap-2">
-      <CardHeader className="flex flex-col items-center text-center w-full">
+    <Card className="flex justify-center items-center w-full sm:w-2/4 mx-auto gap-2">
+      <CardHeader className="flex flex-col items-center text-center w-full px-4 sm:px-6">
         <Avatar className="w-60 h-60">
           <Image
             src={goat.src}
@@ -101,7 +101,7 @@ const About = () => {
         </CardDescription>
         <Separator />
       </CardHeader>
-      <CardContent className="flex flex-wrap gap-2 justify-center max-w-3/4 pt-1">
+      <CardContent className="flex flex-wrap gap-2 justify-center max-w-3/4 pt-1 px-4 sm:px-6">
         {skills.map((skill, index) => (
           <Badge
             key={skill}
