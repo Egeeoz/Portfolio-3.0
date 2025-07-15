@@ -44,7 +44,7 @@ const Projects = () => {
       name: 'Previous Portfolio Website',
       description:
         'A personal portfolio website showcasing projects, skills, and contact information',
-      link: 'https://github.com/Egeeoz/portfolio-2.0',
+      link: 'https://egeeoz.github.io/portfolio-2.0/',
       github: 'https://github.com/Egeeoz/portfolio-2.0',
       technologies: ['HTML', 'CSS', 'React', 'CD/CI'],
     },

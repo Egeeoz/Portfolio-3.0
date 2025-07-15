@@ -31,7 +31,6 @@ const Contact = () => {
         </CardHeader>
         <CardContent className="px-4 sm:px-6">
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 text-sm">
-            {/* Email */}
             <div className="flex items-center gap-2">
               <Mail className="w-6 h-6 text-muted-foreground" />
               <a
