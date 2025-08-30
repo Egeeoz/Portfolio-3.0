@@ -26,7 +26,7 @@ const Projects = () => {
       id: 2,
       name: 'Unscramblr',
       description: `A browser based word game where players unscramble daily shuffled words to guess the correct answer, with features like a daily challenge`,
-      link: 'https://www.unscramblr.com/',
+      link: 'https://unscramblr.web.app',
       github: 'https://github.com/Egeeoz/Unscramblr',
       technologies: [
         'HTML',
