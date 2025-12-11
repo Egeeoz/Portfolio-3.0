@@ -24,6 +24,23 @@ const Projects = () => {
     },
     {
       id: 2,
+      name: 'Rifter',
+      description:
+        'A community like website for League of Legends players which will allow users to create share and talk to eachother. Project is still under construction!',
+      link: 'https://rifter.vercel.app/',
+      github: 'https://github.com/Egeeoz/Rifter',
+      technologies: [
+        'HTML',
+        'CSS',
+        'React',
+        'Typescript',
+        'Next.js',
+        'Tailwind',
+        'Supabase',
+      ],
+    },
+    {
+      id: 3,
       name: 'Unscramblr',
       description: `A browser based word game where players unscramble daily shuffled words to guess the correct answer, with features like a daily challenge`,
       link: 'https://unscramblr.web.app',
@@ -55,6 +72,9 @@ const Projects = () => {
     CSS: 'bg-blue-500 text-white',
     React: 'bg-cyan-400 text-black',
     Typescript: 'bg-blue-600 text-white',
+    'Next.js': 'bg-purple-600 text-white',
+    Tailwind: 'bg-cyan-500 text-white',
+    Supabase: 'bg-green-500 text-white',
     DynamoDB: 'bg-orange-600 text-white',
     Serverless: 'bg-purple-500 text-white',
     Lambda: 'bg-yellow-500 text-black',
@@ -72,11 +92,13 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 items-start px-4 sm:px-0">
-        {projects.map((project) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start px-4 sm:px-0 gap-x-4">
+        {projects.map((project, index) => (
           <Card
             key={project.id}
-            className="flex flex-col group w-full max-w-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 gap-4"
+            className={`flex flex-col group w-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 max-w-lg gap-4 ${
+              index % 2 === 0 ? 'md:justify-self-end' : 'md:justify-self-start'
+            }`}
           >
             <CardHeader className="px-4 sm:px-6">
               <CardTitle className="text-xl group-hover:text-primary transition-colors">
