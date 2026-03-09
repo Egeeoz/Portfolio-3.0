@@ -97,7 +97,8 @@ const About = () => {
           </div>
         </CardTitle>
         <CardDescription className="mb-4">
-          24 year old working as fullstack dev at We Know IT, likes to code
+          24 year old fullstack dev, currently working as customer experience
+          consultant at Klarna, likes to code
         </CardDescription>
         <Separator />
       </CardHeader>
